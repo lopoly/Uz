@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Uz</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="station_enter">Enter a Train Station</string>
+</resources>
