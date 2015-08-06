@@ -19,17 +19,15 @@ import java.net.URLEncoder;
 public class UzFetcher {
    public String getUrlString(String urlSpec) throws IOException{
 
-           URL url = new URL(urlSpec);
-
-           HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-
+        URL url = new URL(urlSpec);
+        HttpURLConnection connection = (HttpURLConnection) url.openConnection();
 
         connection.setRequestMethod("POST");
         connection.setDoOutput(true);
         BufferedReader in = new BufferedReader(new InputStreamReader(connection.getInputStream()));
 
-       String inputLine = "";
-       StringBuilder response = new StringBuilder();
+        String inputLine = "";
+        StringBuilder response = new StringBuilder();
         while ((inputLine = in.readLine()) != null) {
              response.append(inputLine);
         }

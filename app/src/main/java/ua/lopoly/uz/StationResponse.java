@@ -31,7 +31,7 @@ public class StationResponse {
 
     class Station {
         String mTitle;
-        long mStationId;
+        String mStationId;
 
         @Override
         public String toString() {
@@ -52,12 +52,12 @@ public class StationResponse {
         }
 
         @JsonProperty("station_id")
-        public long getStationId() {
+        public String getStationId() {
             return mStationId;
         }
 
         @JsonProperty("station_id")
-        public void setStationId(long stationId) {
+        public void setStationId(String stationId) {
             mStationId = stationId;
         }
 

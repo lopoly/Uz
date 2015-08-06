@@ -14,18 +14,29 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="65dp"
-        android:hint="@string/station_enter"
+        android:layout_marginTop="35dp"
+        android:hint="@string/station_from"
         android:inputType="textCapSentences"
-        android:ems="10" >
-    <requestFocus />
-    </AutoCompleteTextView>
-    <TextView
-        android:id="@+id/textView1"
+        android:ems="10"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextView2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="105dp"
+        android:hint="@string/station_till"
+        android:inputType="textCapSentences"
+        android:ems="10"
+        android:clickable="true"/>
+
+    <CalendarView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:id="@+id/calendarView"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
 
 </RelativeLayout>
